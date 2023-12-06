@@ -1,4 +1,4 @@
-✨🍬Planning to help this branch stay alive and any issues will try to solve or fix .. But will be slow as I run many github repos .
+✨🍬Planning to help this branch stay alive and any issues will try to solve or fix .. But will be slow as I run many github repos . before raising any issues, please update comfyUI to the latest and esnure all the required packages are updated ass well. Share your workflow in issues to retest same at our end and update the patch.🍬
 
 
 <b> Efficiency Nodes for ComfyUI Version 2.0+
@@ -72,6 +72,7 @@ Please check out our WIKI for any use cases and new developments including workf
         <li>Node that the gives user the ability to upscale KSampler results through variety of different methods.</li>
         <li>Comes out of the box with popular Neural Network Latent Upscalers such as Ttl's <a href="https://github.com/Ttl/ComfyUi_NNLatentUpscale">ComfyUi_NNLatentUpscale</a> and City96's <a href="https://github.com/city96/SD-Latent-Upscaler">SD-Latent-Upscaler</a>.</li>
         <li>Supports ControlNet guided latent upscaling. <i> (You must have Fannovel's <a href="https://github.com/Fannovel16/comfyui_controlnet_aux">comfyui_controlnet_aux</a> installed to unlock this feature)</i></li>
+        <li> Local models---The node pulls the required files from huggingface hub by default. You can create a models folder and place the modules there if you have a flaky connection or prefer to use it completely offline, it will load them locally instead. The path should be: ComfyUI/custom_nodes/efficiency-nodes-comfyui/models; Alternatively, just clone the entire HF repo to it: (git clone https://huggingface.co/city96/SD-Latent-Upscaler)   to ComfyUI/custom_nodes/efficiency-nodes-comfyui/models</li>
     </ul>
     <p align="center">
       <img src="https://github.com/LucianoCirino/efficiency-nodes-media/blob/main/images/nodes/HighResFix%20-%20Node%20Example.gif" width="1080">
@@ -168,6 +169,9 @@ Kindly load all PNG files in same name in the (workflow driectory) to comfyUI to
 5. Stacking Scripts: **AnimateDiff** + **HiRes-Fix** (with ControlNet)<br>
   [<img src="https://github.com/jags111/efficiency-nodes-comfyui/blob/main/workflows/eff_animatescriptWF001.gif" width="800">](https://github.com/jags111/efficiency-nodes-comfyui/blob/main/workflows/eff_animatescriptWF001.gif)<br>
 
+6. SVD workflow: **Stable Video Diffusion** + *Kohya Hires** (with latent control)<br>
+  <br>
+
 
 ### Dependencies
 The python library <i><a href="https://github.com/danthedeckie/simpleeval" >simpleeval</a></i> is required to be installed if you wish to use the **Simpleeval Nodes**.
@@ -189,8 +193,15 @@ To install, drop the "_**efficiency-nodes-comfyui**_" folder into the "_**...\Co
 
 # Comfy Resources
 
-**Misc**
-
+**Efficiency Linked Repos**
+- [BlenderNeko ComfyUI_ADV_CLIP_emb](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)  by@BlenderNeko
+- [Chrisgoringe cg-noise](https://github.com/chrisgoringe/cg-noise)  by@Chrisgoringe
+- [pythongosssss ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)  by@pythongosssss
+- [shiimizu ComfyUI_smZNodes](https://github.com/shiimizu/ComfyUI_smZNodes)  by@shiimizu
+- [LEv145_images-grid-comfyUI-plugin](https://github.com/LEv145/images-grid-comfy-plugin))  by@LEv145
+- [ltdrdata-ComfyUI-Inspire-Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack) by@ltdrdata
+- [pythongosssss-ComfyUI-custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) by@pythongosssss
+- [RockOfFire-ComfyUI_Comfyroll_CustomNodes](https://github.com/RockOfFire/ComfyUI_Comfyroll_CustomNodes) by@RockOfFire 
 
 **Guides**:
 - [Official Examples (eng)](https://comfyanonymous.github.io/ComfyUI_examples/)- 
